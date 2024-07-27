@@ -12,10 +12,18 @@ def divide(x, y):
         return "Error! Division by zero."
     return x / y
 
-def integer_divide(x, y):
+def exponent(x, y):
+    return x ** y
+
+def modulus(x, y):
     if y == 0:
         return "Error! Division by zero."
-    return x // y  # Use integer division operator
+    return x % y
+  
+def integer_divide(x, y):
+  if y == 0:
+      return "Error! Division by zero."
+  return x // y  # Use integer division operator
 
 if __name__ == "__main__":
     print("Select operation:")
@@ -23,9 +31,11 @@ if __name__ == "__main__":
     print("2. Subtract")
     print("3. Multiply")
     print("4. Divide")
-    print("5. Integer Divide")  # New option for integer division
+    print("5. Exponentiate")
+    print("6. Modulus")
+    print("7. Integer Divide")  # New option for integer division
     
-    choice = input("Enter choice (1/2/3/4/5): ")  # Updated to include 5
+    choice = input("Enter choice (1/2/3/4/5/6/7): ")
     
     num1 = float(input("Enter first number: "))
     num2 = float(input("Enter second number: "))
@@ -43,7 +53,13 @@ if __name__ == "__main__":
         print(f"{num1} / {num2} = {divide(num1, num2)}")
     
     elif choice == '5':
-        print(f"{num1} // {num2} = {integer_divide(num1, num2)}")  # Updated for integer division
+        print(f"{num1} ^ {num2} = {exponent(num1, num2)}")
+    
+    elif choice == '6':
+        print(f"{num1} % {num2} = {modulus(num1, num2)}")
+        
+    elif choice === '7':
+       print(f"{num1} // {num2} = {integer_divide(num1, num2)}")  # Updated for integer division
     
     else:
         print("Invalid input")
