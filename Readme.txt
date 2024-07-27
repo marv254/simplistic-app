@@ -11,4 +11,4 @@ This application performs basic arithmetic operations.
 1. Navigate to the project directory.
 2. Run the following command to compile and test the application as well as to create a deployable package:
 
-   ```sh make '''
+   ``` make ```
