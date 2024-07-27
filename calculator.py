@@ -58,7 +58,7 @@ if __name__ == "__main__":
     elif choice == '6':
         print(f"{num1} % {num2} = {modulus(num1, num2)}")
         
-    elif choice === '7':
+    elif choice == '7':
        print(f"{num1} // {num2} = {integer_divide(num1, num2)}")  # Updated for integer division
     
     else:
