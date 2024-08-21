@@ -1,1 +1,6 @@
-__pycache__/
+__pycache__/*
+build/*
+dist/*
+calculator.spec
+.idea/*
+calculator_app.tar.gz
