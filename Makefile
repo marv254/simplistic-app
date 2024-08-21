@@ -17,7 +17,7 @@ build: compile
 	# Placeholder for additional build steps
 
 # Test target
-test: build
+test:
 	@echo "Running unit tests on the compiled executable..."
 	$(PYTHON) -m unittest $(TEST) || (echo "Tests failed" && exit 1)
 
